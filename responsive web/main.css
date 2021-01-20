@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, max-content);
+}
+#container header {
+  padding: 3vh;
+  grid-column: 1/-1;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, #80eaff 0%, #feacff 47%, #80eaff 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container nav {
+  grid-column: 1/-1;
+  text-align: center;
+  overflow: hidden;
+  height: 4.4vh;
+  transition: all 0.5s;
+  margin: 1vh;
+}
+#container nav p {
+  color: white;
+  background-color: #5c5c5c;
+  margin: 3px;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container nav:hover {
+  height: 20vh;
+}
+#container section {
+  grid-column: 1/-1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container section img {
+  width: 100vw;
+  height: 100vh;
+}
+#container section h2 {
+  padding: 2vh;
+  display: flex;
+  justify-content: center;
+}
+#container section p {
+  text-align: center;
+  padding: 4vh;
+}
+#container aside {
+  color: white;
+  background-color: #5c5c5c;
+  grid-column: 1/-1;
+}
+#container aside p {
+  text-align: center;
+  margin: 1vh;
+}
+#container aside h3 {
+  display: flex;
+  justify-content: center;
+  margin: 2vh;
+}
+#container footer {
+  grid-column: 1/-1;
+  color: white;
+  background-color: #363636;
+}
+#container footer p {
+  margin: 2vh;
+  display: flex;
+  justify-content: center;
+}
+#container footer h4 {
+  margin: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  #container nav {
+    grid-column: 1/-1;
+    text-align: center;
+    overflow: hidden;
+    height: 6.5vh;
+    transition: all 2s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: none;
+    pointer-events: none;
+  }
+  #container nav p {
+    display: inline;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  #container header {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+  }
+  #container nav {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+  #container section {
+    grid-column: 1/-4;
+    grid-row: 4/6;
+  }
+  #container aside {
+    grid-column: -4/-1;
+    grid-row: 4/6;
+  }
+  #container footer {
+    grid-column: 1/-1;
+    grid-row: 9/-1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

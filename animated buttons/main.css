@@ -1,0 +1,109 @@
+
+@font-face {
+    font-family: "addFuente";
+    src: url("font.ttf");
+  }
+
+
+#btn1{
+min-height: 5vh;
+min-width:14vw;
+font-family: "addFuente" serif;
+background: linear-gradient(90deg, rgba(218,0,201,1) 9%, rgba(10,219,203,1) 84%);
+
+justify-content: center;
+align-items: center;
+z-index: 1;
+}
+#btn2{
+    min-height: 5vh;
+    min-width:10vw; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 121, 0);
+    font-family: "addFuente" serif;
+   
+    border-radius: 8px;
+    z-index: 2;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+#btn1 , #btn2{
+    display: flex;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    letter-spacing :10px;
+}
+
+#square{
+    
+    border: 4px solid rgba(218,0,201,1);
+    
+    border-radius: 8px;
+    animation: example 3s infinite ;
+    
+}
+@keyframes example {
+    from {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        height: 100px;
+        width: 350px;
+        opacity: 0;
+    }
+  }
+  #square ,#square2{
+    position: absolute;
+    border: 4px solid rgba(218,0,201,1);
+    border-radius: 8px;
+  }
+  #square2{
+    min-height: 6vh;
+    min-width:15vw;
+    opacity: 0;
+    box-shadow: 1px 1px 20px 4px rgba(218,0,201,1);
+    transition: opacity 1s;
+    
+}
+
+#square2:hover{
+    opacity: 0.5;
+}
+#arrow{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    margin-top: .2vh;
+    background-color:  rgba(10,219,203,1);
+    width: 1.7vw;
+    height: 4vh;
+    border-radius: 10px 50px 50px 10px;
+    transition: all 1s;
+}
+
+
+#invisiblecontent{
+    position: absolute;
+   
+    min-height: 5vh;
+    min-width:14.2vw; 
+    overflow: hidden;
+    transition: all 1s;
+    opacity: 0;
+}
+#invisiblecontent:hover{
+    min-width:11vw; 
+    opacity: 1;
+}
+

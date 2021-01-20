@@ -1,0 +1,31 @@
+
+//vars
+
+$colorLetters :white;
+$bgColor1 :rgb(92, 92, 92);
+$bgColorFooter:rgb(54, 54, 54);
+@mixin header{
+    color:$colorLetters;
+  
+    background: linear-gradient(90deg, rgba(128,234,255,1) 0%, rgba(254,172,255,1) 47%, rgba(128,234,255,1) 100%);
+}
+$sans : Arial, Helvetica, sans-serif;
+
+
+@mixin navItems{
+    color:$colorLetters;
+    background-color :$bgColor1;
+    
+}
+
+@mixin aside{
+    color:$colorLetters;
+    background-color : $bgColor1;
+   
+}
+
+@mixin footer{
+    color:$colorLetters;
+    background-color :$bgColorFooter;
+   
+}

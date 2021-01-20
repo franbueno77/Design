@@ -1,0 +1,226 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+
+div{
+    width: 100%;
+    height: 128vh;
+    background: url("images/img1.jpg")  no-repeat  ;
+    background-size: cover;
+}
+*/
+html{
+  overflow: hidden;
+}
+
+
+@keyframes animacion{
+
+    0%   { background: url("images/img1.jpg")  no-repeat  ;
+        background-size: cover;
+        -webkit-animation: opacityAnimation 5s linear 1 normal forwards;
+        }
+
+    20%  { background: url("images/img2.jpg")  no-repeat ;background-size: cover;
+        background-size: cover;
+        -webkit-animation: opacityAnimation 5s linear 1 normal forwards;
+        }
+
+    40%  {background: url("images/img3.jpg")  no-repeat ;background-size: cover;
+        background-size: cover;
+        -webkit-animation: opacityAnimation 5s linear 1 normal forwards;
+        }
+
+    60%  {background: url("images/img4.jpg")  no-repeat ;background-size: cover;
+        background-size: cover;
+        -webkit-animation: opacityAnimation 5s linear 1 normal forwards;
+        }
+
+    80% {background: url("images/img5.jpg")  no-repeat ;background-size: cover;
+        background-size: cover;
+        -webkit-animation: opacityAnimation 5s linear 1 normal forwards;
+        }
+
+    100% {background: url("images/img6.jpg")  no-repeat ;background-size: cover;
+        background-size: cover;
+        -webkit-animation: opacityAnimation 5s linear 1 normal forwards;
+        }
+
+}
+@keyframes zoom{
+    0%   {transform: scale(.8);}
+    100% {transform: scale(1.5);}
+}
+@keyframes opacityAnimation{
+
+   from{opacity: 1;}
+   to{opacity: 0;}
+}
+h1{
+    position: absolute;
+
+    font: 5em Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(202, 17, 78);
+    bottom: 0;
+    right: -560px;
+    
+}
+
+.text1{
+    right: -230px;
+    
+    
+}
+.text2{
+    right: -560px;
+   
+    
+}
+.text3{
+    right: -540px;
+    
+    
+}
+.text4{
+    right: -750px;
+   
+}
+.text5{
+    right: -748px;
+   
+}
+
+
+#container{
+    
+    
+    width: 100vw;
+    height: 100vh;
+    animation: animacion  ease-in 18s forwards  infinite alternate ;
+    z-index: 998;
+   /*-webkit-animation: zoom 5s linear 1 normal forwards;*/
+    background-size: cover;
+    transition: opacity .25s ease-in-out;
+}
+    #pattern{
+        position: absolute;
+        background: url("/images/pattern.png") repeat ;
+        background-repeat: repeat;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+    }
+
+    @keyframes animationLetters-in{
+
+        0%{
+            right: -230px;
+            opacity: 0;
+        }
+       
+        100%{
+            right: 100px;
+            opacity: 1;
+
+        }
+        
+    }
+
+    
+    @keyframes animationLetters-out{
+
+      
+        0%{
+            right: 100px;
+            opacity: 1;
+        }
+
+        100%{
+            right: 500px;
+            opacity: 0;
+        }
+    }
+
+    .text1{
+      animation-name: animationLetters-in ,animationLetters-out;
+      animation-duration: 4s , 2s;
+      animation-fill-mode: forwards ,forwards;
+
+      animation-delay: 0s, 3s;
+      
+     }
+
+    .text2{
+        animation-name: animationLetters-in ,animationLetters-out;
+        animation-duration: 4s , 2s;
+        animation-fill-mode: forwards ,forwards;
+  
+        animation-delay: 4s, 7s;
+    }
+    .text3{
+        animation-name: animationLetters-in ,animationLetters-out;
+      animation-duration: 4s , 2s;
+      animation-fill-mode: forwards ,forwards;
+
+      animation-delay: 8s, 11s;
+    }
+    .text4{
+        animation-name: animationLetters-in ,animationLetters-out;
+      animation-duration: 4s , 2s;
+      animation-fill-mode: forwards ,forwards;
+
+      animation-delay: 12s, 15s;
+    }
+    .text5{
+        animation-name: animationLetters-in ,animationLetters-out;
+        animation-duration: 4s , 2s;
+        animation-fill-mode: forwards ,forwards;
+  
+        animation-delay: 16s, 19s;
+    }
+   .text6{
+    animation-name: animationLetters-in ,animationLetters-out;
+    animation-duration: 4s , 2s;
+    animation-fill-mode: forwards ,forwards;
+
+    animation-delay: 20s, 23s;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+
+    
+    
+    background-size: cover;
+    width: 100%;
+    height: 128vh;
+    animation-direction: alternate;
+    animation-name: animacion2;
+    animation-duration: 3s;
+    opacity: 9;
+
+    animation-iteration-count: infinite;
+    
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    */
+
