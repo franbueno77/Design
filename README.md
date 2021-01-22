@@ -1,6 +1,6 @@
-> Prácticas de diseño
+## Prácticas de diseño
 
-####Descripción:####
+#### Descripción:
 
 Cada carpeta contiene una práctica enfocada al aprendizaje de algunos  aspectos del diseño y de la maquetación web.
 
