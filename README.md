@@ -14,7 +14,9 @@ Botones con animaciones, transiciones hover y degradados.
  y estructurado y realizado con Sass. 
 
  **grid image**
+ 
  Imagen y elementos  generados por partes mediante el uso de grid.  
 
  **transitions**
+ 
  transiciones de imágenes y letras realizadas mediante animation y transition.
