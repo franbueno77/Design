@@ -5,9 +5,11 @@
 Cada carpeta contiene una práctica enfocada al aprendizaje de algunos  aspectos del diseño y de la maquetación web.
 
 **animated buttons**
+
 Botones con animaciones, transiciones hover y degradados.
 
  **responsive web**
+ 
  Diseño responsive para diferentes dispositivos (móvil, tablets,pc...) usando el principio ***Mobile first*** ,
  y estructurado y realizado con Sass. 
 
